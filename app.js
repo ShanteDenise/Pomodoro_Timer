@@ -39,6 +39,7 @@ function playAudio() {
 displayTimeLeft = (seconds) => {
     const minutes = Math.floor(seconds / 60);
     const remainderSeconds = seconds % 60;
+    //Add a 0 if remainder seonds is less than 10 or dont add anything
     const display = `${minutes}:${remainderSeconds < 10 ? '0' : ''}${
         remainderSeconds}`
     timerDisplay.textContent = display;
